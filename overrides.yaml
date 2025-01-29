@@ -1,0 +1,20 @@
+vulnerabilities:
+  # This is the full set of supported rule fields:
+  - rule:
+      vulnerability: CVE-2023-6879
+      fixState: wont-fix
+      package:
+        name: libaom3
+        version: 3.6.0-1+deb12u1
+        type: deb
+        location: "/usr/share/doc/libaom3/copyright"
+    reason: No reason
+  - rule:
+      vulnerability: CVE-2023-45853
+      fixState: wont-fix
+      package:
+        name: zlib1g
+        version: 1:1.2.13.dfsg-1
+        type: deb
+        location: "/usr/share/doc/zlib1g/copyright"
+    reason: No reason
